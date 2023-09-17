@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link href="assets/css/header.css" rel="stylesheet">
+        <link href="assets/css/main.css" rel="stylesheet">
+        <link href="assets/css/footer.css" rel="stylesheet">
+        <link href="assets/css/responsive.css" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon-32x32.png">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+
+        <title>Manuel Fimiani-Home</title>
+    </head>
+
+    <body>
+        <header>
+            
+                         <!--Navbar Mobile-->
+
+             <div class="topnav" id="myTopnav">
+                <a href="index.html">Home</a> 
+                <a href="about.html">Chi Sono</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="contact.html">Contatti</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+            </div>
+
+                        <!--Navbar -->
+                        <div class="navbar" id="navbar">
+                            <a class="active" href="index.html">Home</a>
+                            <a class="active" href="about.html">Chi Sono</a>
+                            <a class="active" href="portfolio.html">Portfolio</a>
+                            <a class="active" href="contact.html">Contatti</a>
+                          </div>                   
+         </header>
+         <div id="portfolio" class="container-project">
+            <h2 class="project_title">Miei Progetti</h2>
+            <p class="project_p">Alcuni progetti a cui ho lavorato recentemente</p>
+            
+            <div class="container-project1">
+                <img class="project-foto" src="assets/img/portfolio/mywebsite.jpeg" alt="My website">
+                <div class="container-all-project-info">
+                    <h3>Il mio sito web</h3>
+                    <p class="project_text">
+                        Il mio primo vero progetto. Il progetto HTML e CSS per il corso di Start2Impact University. In questo progetto creo il mio primo sito web che stai visitando! 
+                    </p>
+                    <div class="container_all_projects_btn">
+                    <div class="container_projects_btn1">
+                        <a href="https://github.com/FimianiManuel" target="_blank" rel="noreferrer noopener"> <!--Da aggiungere il link esatto dopo aver caricato il progetto su GitHub-->
+                            <button class="projects_btn">
+                                <img class="icons2" src="assets/img/social-icons/github.svg">GitHub
+                            </button>
+                        </a>
+                    </div>
+                    <div class="container_project_btn2">
+                        <a href="index.html" target="_blank" rel="noreferrer noopener">
+                            <button class="projects_btn">
+                                <img class="icons2" src="assets/img/portfolio/external-link-alt-solid.svg" alt="icons">
+                            Website</button>
+                        </a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-project2">
+            <img class="project-foto" src="assets/img/portfolio/work-in-progress.jpeg" alt="work in progress">
+            <div class="container-all-project-info">
+                <h3>Work In Progress</h3>
+                <p class="project_text">
+                    Sono all'inizio e ancora non ho <br> molto da mostrarti. Ma resta sintonizzato <br> per altri progetti!
+                </p>
+            </div>
+        </div>
+        <!--Footer-->
+        <footer>
+            <div class="container_footer">
+                <span class="footer_text">Copyright © 2023 Manuel Fimiani</span>
+                <div class="container-social">
+                    <ul>
+                        <a rel="noreferrer noopener" href="https://www.linkedin.com/in/manuelfimiani/">
+                            <li>
+                                <img src="assets/img/social-icons/linkedin.svg" alt="icons">
+                            </li>
+                        </a>
+                        <a rel="noreferrer noopener"
+                            href="https://www.instagram.com/rider_biker95?igshid=OGQ5ZDc2ODk2ZA==">
+                            <li>
+                                <img src="assets/img/social-icons/instagram.svg" alt="icons">
+                            </li>
+                        </a>
+                        <a rel="noreferrer noopener" href="https://github.com/FimianiManuel">
+                            <li>
+                                <img src="assets/img/social-icons/github.svg" alt="icons">
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <script>
+            window.onscroll = function () { myFunction() };
+    
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+    
+            function myFunction() {
+                if (window.pageYOffset >= sticky) {
+                    navbar.classList.add("sticky")
+                } else {
+                    navbar.classList.remove("sticky");
+                }
+            }
+        </script>
+    </body>
+</html>

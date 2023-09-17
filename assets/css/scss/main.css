@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e8eae3;
+  font-family: Arial, "Comic Sns MS", sans-serif;
+  color: #db6542;
+  margin: 6px;
+}
+
+/*Home*/
+.hello {
+  font-size: 29px;
+}
+
+.menu2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: 650px;
+  padding-bottom: 15px;
+  padding-top: 100px;
+}
+
+.my-name {
+  color: rgb(7, 7, 98);
+}
+
+.first-impression {
+  width: 685px;
+  height: 300px;
+  padding-left: 170px;
+  padding-top: -50px;
+}
+.first-impression .text1 {
+  margin-right: 80px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+section:nth-of-type(1) .button {
+  margin-bottom: 53px;
+  padding: 12px 40px 12px 15px;
+  position: relative;
+}
+
+.button1 {
+  width: 500px;
+  height: 500px;
+}
+
+.my-work-button {
+  background-color: #db6542;
+  border: 2px solid;
+  color: #e8eae3;
+  padding: 30px 80px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  white-space: nowrap;
+  margin-bottom: 10px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+.container1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  margin-top: -55px;
+}
+.container1 img {
+  opacity: 1;
+  display: block;
+  width: 300px;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+  border: 8px;
+  margin-left: 40px;
+}
+
+.overlay {
+  transition: 0.5s ease;
+  margin-left: 125px;
+  margin-top: 50px;
+  opacity: 0;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  cursor: pointer;
+  background-color: #db6542;
+}
+
+.container1:hover .image {
+  opacity: 0.3;
+}
+
+.container1:hover .overlay {
+  opacity: 1;
+}
+
+.text2:hover {
+  opacity: 0.6;
+}
+
+.my-work-button:hover {
+  opacity: 0.5;
+}
+
+.text2 {
+  white-space: nowrap;
+  color: #e8eae3;
+  font-size: 20px;
+  padding: 12px 24px;
+}
+
+.guarda-lavori,
+.link-chi-sono {
+  text-decoration: none;
+  background-color: #db6542;
+  color: #e8eae3;
+}
